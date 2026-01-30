@@ -2,42 +2,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rishwanth RV | MES & SQL Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; color: #333; }
-    header { background: #0b3c5d; color: white; padding: 50px 20px; text-align: center; }
-    section { max-width: 1100px; margin: auto; padding: 40px 20px; }
-    h2 { color: #0b3c5d; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
-    .skills span { display: inline-block; background: #e1ecf4; margin: 6px; padding: 10px 14px; border-radius: 6px; }
-    .card { background: white; padding: 25px; margin: 20px 0; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    a { color: #0b3c5d; font-weight: bold; text-decoration: none; }
-    footer { background: #0b3c5d; color: white; text-align: center; padding: 20px; }
-  </style>
-</head>
+  <title>Rishwanth RV | MES & SQL Portfolio</title>  <!-- Google Font -->  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f5f7fa;
+    }
+
+    header {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      border-left: 5px solid #00e0ff;
+      padding-left: 15px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skills span {
+      background: rgba(0,224,255,0.15);
+      border: 1px solid rgba(0,224,255,0.3);
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #00e0ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: rgba(0,0,0,0.4);
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    .tagline {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #00e0ff;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.6rem; }
+    }
+  </style></head>
 <body><header>
   <h1>Rishwanth RV</h1>
   <p>MES L2 Support Engineer | Application Support | SQL Specialist</p>
-  <p>Chennai, India | rishwanthrv2207@gmail.com</p>
+  <div class="tagline">Manufacturing Systems • SQL Optimization • MES–ERP Integration</div>
 </header><section>
   <h2>About Me</h2>
-  <p>
-    MES Application Support Engineer with 3.9+ years of experience supporting high-volume
-    24x7 manufacturing environments. Strong expertise in MES operations, SQL troubleshooting,
-    MES–ERP integrations, UAT execution, incident & problem management, and root cause analysis.
-  </p>
+  <div class="card">
+    <p>
+      MES Application Support Engineer with 3.9+ years of experience supporting high-volume
+      24x7 manufacturing environments. Specialized in MES operations, SQL troubleshooting,
+      MES–ERP integrations, UAT execution, incident & problem management, and root cause analysis.
+    </p>
+  </div>
 </section><section>
   <h2>Core Skills</h2>
-  <div class="skills">
-    <span>MES (LAMA)</span>
-    <span>SQL Server</span>
-    <span>PostgreSQL</span>
-    <span>SAP PP / MM / QM</span>
-    <span>Incident Management</span>
-    <span>Root Cause Analysis (RCA)</span>
-    <span>UAT & Validation</span>
-    <span>Power BI</span>
-    <span>ServiceNow</span>
-    <span>Manufacturing IT Systems</span>
+  <div class="card">
+    <div class="skills">
+      <span>MES (LAMA)</span>
+      <span>SQL Server</span>
+      <span>PostgreSQL</span>
+      <span>SAP PP / MM / QM</span>
+      <span>Incident Management</span>
+      <span>Root Cause Analysis (RCA)</span>
+      <span>UAT & Validation</span>
+      <span>Power BI</span>
+      <span>ServiceNow</span>
+      <span>Manufacturing IT Systems</span>
+    </div>
   </div>
 </section><section>
   <h2>SQL & MES Projects</h2>  <div class="card">
@@ -48,30 +134,32 @@
     </p>
     <p>🔗 <a href="#">GitHub Repository (Add Link)</a></p>
   </div>  <div class="card">
-    <h3>Manufacturing Sales & Production Analysis</h3>
+    <h3>Manufacturing Production & Sales Analysis</h3>
     <p>
-      Created SQL reports to analyze production efficiency, material consumption,
-      and operational KPIs.
+      Built SQL-based reports to analyze production efficiency, material consumption,
+      downtime trends, and operational KPIs.
     </p>
     <p>🔗 <a href="#">GitHub Repository (Add Link)</a></p>
   </div>  <div class="card">
-    <h3>MES–ERP Integration Support Project</h3>
+    <h3>MES–ERP Integration Support</h3>
     <p>
       Supported MES–SAP integrations, resolved BOM, routing, and transaction failures,
-      and ensured data accuracy across systems.
+      ensuring data accuracy and production continuity.
     </p>
   </div>
 </section><section>
   <h2>Resume</h2>
-  <p>
+  <div class="card">
     📄 <a href="RISHWANTH_MES_SUPPORT_ENGINEER.pdf" target="_blank">Download Resume</a>
-  </p>
+  </div>
 </section><section>
   <h2>Contact</h2>
-  <p>Email: rishwanthrv2207@gmail.com</p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/rishwanth-rv-2866991b1" target="_blank">linkedin.com/in/rishwanth-rv</a></p>
-  <p>GitHub: <a href="https://github.com/" target="_blank">Add your GitHub URL</a></p>
+  <div class="card">
+    <p>Email: rishwanthrv2207@gmail.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/rishwanth-rv-2866991b1" target="_blank">linkedin.com/in/rishwanth-rv</a></p>
+    <p>GitHub: <a href="https://github.com/" target="_blank">Add your GitHub URL</a></p>
+  </div>
 </section><footer>
-  <p>© 2026 Rishwanth RV | MES & SQL Portfolio</p>
+  © 2026 Rishwanth RV | MES & SQL Portfolio
 </footer></body>
 </html>
